@@ -61,7 +61,7 @@ print(np.max(values))
 print(np.argmin(values))
 print(np.argmax(values))
 print(np.sum(values, axis=0))
-print(np.sum(values, axis=1)) '''
+print(np.sum(values, axis=1)) 
 
 # filtering
 
@@ -73,4 +73,16 @@ sunny = temperature[(temperature >= 20) & (temperature <= 22)]
 killer = np.where(temperature >= 43, temperature, 0)
 print(winter)
 print(sunny)
-print(killer)
+print(killer) '''
+
+# Random Number
+# random = np.random.default_rng()
+# print(random.integers(low=1, high=237, size=(5, 3)))
+
+# random = np.random.uniform()
+# print(np.random.uniform(low=1, high=237, size=(2, 1)))
+
+random = np.random.default_rng()
+cars = np.array(["Mercedes", "BMW", "Tesla", "Audi", "BYD"])
+car = random.choice(cars, size=(2, 1))
+print(car)
