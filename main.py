@@ -48,7 +48,7 @@ list2 = np.array([[2], [4], [6], [8], [10], [12], [14], [16], [18], [20]])
 
 print(list1.shape)
 print(list2.shape)
-print(list1 * list2) '''
+print(list1 * list2)
 
 # Aggregrate Function
 
@@ -61,4 +61,16 @@ print(np.max(values))
 print(np.argmin(values))
 print(np.argmax(values))
 print(np.sum(values, axis=0))
-print(np.sum(values, axis=1))
+print(np.sum(values, axis=1)) '''
+
+# filtering
+
+temperature = np.array([[22, 43, 75, 21, 98, 45, 14],
+                        [-2, -77, 6, -23, 51, 87, -15]])
+
+winter = temperature[temperature <= 6]
+sunny = temperature[(temperature >= 20) & (temperature <= 22)]
+killer = np.where(temperature >= 43, temperature, 0)
+print(winter)
+print(sunny)
+print(killer)
