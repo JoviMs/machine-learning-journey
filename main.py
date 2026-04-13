@@ -23,7 +23,7 @@ bogey = np.array([
 # print(bogey[0:4:3])
 # print(bogey[:, 1])
 # print(bogey[:, 0:3])
-print(bogey[:, ::-3]) '''
+print(bogey[:, ::-3]) 
 
 # Scalar Arithmetic Operations
 
@@ -40,4 +40,12 @@ print(bogey[:, ::-3]) '''
 leaders = np.array([12, 87, 55, 90, 76, 43, 33, 9])
 # print(leaders >= 15)
 leaders[leaders >= 50] = 100
-print(leaders)
+print(leaders) '''
+
+# Broadcasting
+list1 = np.array([[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]])  # 2d array
+list2 = np.array([[2], [4], [6], [8], [10], [12], [14], [16], [18], [20]])
+
+print(list1.shape)
+print(list2.shape)
+print(list1 * list2)
