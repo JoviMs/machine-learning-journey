@@ -40,7 +40,7 @@ print(bogey[:, ::-3])
 leaders = np.array([12, 87, 55, 90, 76, 43, 33, 9])
 # print(leaders >= 15)
 leaders[leaders >= 50] = 100
-print(leaders) '''
+print(leaders) 
 
 # Broadcasting
 list1 = np.array([[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]])  # 2d array
@@ -48,4 +48,17 @@ list2 = np.array([[2], [4], [6], [8], [10], [12], [14], [16], [18], [20]])
 
 print(list1.shape)
 print(list2.shape)
-print(list1 * list2)
+print(list1 * list2) '''
+
+# Aggregrate Function
+
+values = np.array([[0, 1, 3, 5, 7],
+                   [2, 4, 6, 8, 10]])
+
+print(np.sum(values))
+print(np.min(values))
+print(np.max(values))
+print(np.argmin(values))
+print(np.argmax(values))
+print(np.sum(values, axis=0))
+print(np.sum(values, axis=1))
