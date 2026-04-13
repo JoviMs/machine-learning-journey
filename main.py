@@ -9,7 +9,7 @@ print(my_list.shape)
 print(my_list.ndim)
 
 mama = my_list[0, 0, 0] + my_list[0, 2, 0] + my_list[0, 1, 1]
-print(mama) '''
+print(mama) 
 
 # Slicing
 
@@ -23,4 +23,21 @@ bogey = np.array([
 # print(bogey[0:4:3])
 # print(bogey[:, 1])
 # print(bogey[:, 0:3])
-print(bogey[:, ::-3])
+print(bogey[:, ::-3]) '''
+
+# Scalar Arithmetic Operations
+
+# radii = np.array([2, 4, 6])
+# Area = np.pi * radii ** 2
+# print((Area))
+
+# print([number * 2])
+# print([number - 1])
+# print([number ** 3])
+# print(np.round(number))
+# print(np.sqrt(number))
+
+leaders = np.array([12, 87, 55, 90, 76, 43, 33, 9])
+# print(leaders >= 15)
+leaders[leaders >= 50] = 100
+print(leaders)
